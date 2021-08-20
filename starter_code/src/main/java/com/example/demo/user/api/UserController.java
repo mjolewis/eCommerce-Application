@@ -49,13 +49,13 @@ public class UserController {
 		}
 
 		User user = userService.createUser(createUserRequest);
-		if (user == null || user.getId() <= 0) {
+		if (user == null || user.getId() < 0) {
 			LOGGER.error().log("Error creating user {}", createUserRequest.getUsername());
 			return ResponseEntity.badRequest().build();
 		}
 
 		Cart cart = cartService.createCart();
-		if (cart == null || cart.getId() <= 0) {
+		if (cart == null || cart.getId() < 0) {
 			LOGGER.error().log("Error creating cart. Cannot create cart for user {}", createUserRequest.getUsername());
 			return ResponseEntity.badRequest().build();
 		}
