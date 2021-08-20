@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-public class SareetaApplication {
+public class EcommerceApplication {
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder(){
 		return new BCryptPasswordEncoder();
 	}
 	public static void main(String[] args) {
-		SpringApplication.run(SareetaApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
 
 }
