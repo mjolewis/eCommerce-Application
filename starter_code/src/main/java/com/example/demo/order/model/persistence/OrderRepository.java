@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.user.model.persistence.User;
-import com.example.demo.user.model.requests.UserOrder;
+import com.example.demo.order.model.requests.UserOrder;
 import org.springframework.stereotype.Repository;
 
 @Repository
