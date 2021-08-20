@@ -48,3 +48,148 @@
 2021-08-19 17:38:34.083  INFO 38609 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-08-19 17:38:34.086  INFO 38609 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-08-19 17:38:34.089  INFO 38609 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-19 18:12:17.072  INFO 38950 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.1.5.RELEASE)[0;39m
+
+
+2021-08-19 18:12:17.259  INFO 38950 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on Michaels-MacBook-Air.local with PID 38950 (started by mlewis in /Users/mlewis/IntelliJProjects/Udacity/Java Nanodegree/Security and DevOps/Final-Project/nd035-c4-Security-and-DevOps)
+2021-08-19 18:12:17.261  INFO 38950 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-08-19 18:12:19.425  INFO 38950 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-19 18:12:20.022  INFO 38950 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 579ms. Found 4 repository interfaces.
+2021-08-19 18:12:21.239  INFO 38950 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5bcdb8be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-19 18:12:21.635  INFO 38950 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-19 18:12:21.660  INFO 38950 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-19 18:12:21.661  INFO 38950 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-08-19 18:12:21.805  INFO 38950 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-19 18:12:21.805 DEBUG 38950 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-19 18:12:21.805  INFO 38950 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4435 ms
+2021-08-19 18:12:22.097  INFO 38950 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-19 18:12:22.258  INFO 38950 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-19 18:12:24.637  INFO 38950 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-19 18:12:25.508 DEBUG 38950 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-19 18:12:25.520  WARN 38950 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-19 18:12:25.579 DEBUG 38950 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2021-08-19 18:12:25.595 DEBUG 38950 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-19 18:12:25.625  INFO 38950 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ec9f8d, org.springframework.security.web.context.SecurityContextPersistenceFilter@25699aa7, org.springframework.security.web.header.HeaderWriterFilter@1a2773a8, org.springframework.web.filter.CorsFilter@7e0f9528, org.springframework.security.web.authentication.logout.LogoutFilter@17216605, com.example.demo.security.JWTAuthenticationFilter@5f56424d, com.example.demo.security.JWTAuthenticationVerificationFilter@237b2852, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15369d73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b5021d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@448cdb47, org.springframework.security.web.session.SessionManagementFilter@46612bfc, org.springframework.security.web.access.ExceptionTranslationFilter@3a109ff7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1544ded3]
+2021-08-19 18:12:25.797  INFO 38950 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 18:12:25.817 DEBUG 38950 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-19 18:12:25.871 DEBUG 38950 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-19 18:12:26.095  INFO 38950 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-19 18:12:26.099  INFO 38950 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 9.916 seconds (JVM running for 12.06)
+2021-08-19 18:13:41.617  INFO 38950 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-19 18:13:41.617  INFO 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-19 18:13:41.618 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-08-19 18:13:41.633 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-08-19 18:13:41.634  INFO 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-08-19 18:13:41.679 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/user/create", parameters={}
+2021-08-19 18:13:41.689 DEBUG 38950 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.user.model.persistence.User> com.example.demo.user.api.UserController.createUser(com.example.demo.user.model.requests.CreateUserRequest)
+2021-08-19 18:13:41.831 DEBUG 38950 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.user.model.requests.CreateUserRequest@7e73f6a2]
+2021-08-19 18:13:42.169  INFO 38950 --- [http-nio-8081-exec-2] c.example.demo.user.api.UserController   : User Casey Lewis was created successfully
+2021-08-19 18:13:42.213 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:13:42.213 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.user.model.persistence.User@6b8379be]
+2021-08-19 18:13:42.244 DEBUG 38950 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:15:00.786 DEBUG 38950 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/cart/addToCart", parameters={}
+2021-08-19 18:15:00.789 DEBUG 38950 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.cart.model.persistence.Cart> com.example.demo.cart.api.CartController.addToCart(com.example.demo.cart.model.requests.ModifyCartRequest)
+2021-08-19 18:15:00.795 DEBUG 38950 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.cart.model.requests.ModifyCartRequest@429e53a9]
+2021-08-19 18:15:00.861  INFO 38950 --- [http-nio-8081-exec-6] c.example.demo.cart.api.CartController   : Successfully added 1 to Casey Lewis's cart
+2021-08-19 18:15:00.875 DEBUG 38950 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:15:00.876 DEBUG 38950 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.cart.model.persistence.Cart@5d256dd7]
+2021-08-19 18:15:00.894 DEBUG 38950 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:15:08.615 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/cart/addToCart", parameters={}
+2021-08-19 18:15:08.616 DEBUG 38950 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.cart.model.persistence.Cart> com.example.demo.cart.api.CartController.addToCart(com.example.demo.cart.model.requests.ModifyCartRequest)
+2021-08-19 18:15:08.617 DEBUG 38950 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.cart.model.requests.ModifyCartRequest@71d8958c]
+2021-08-19 18:15:08.650  INFO 38950 --- [http-nio-8081-exec-7] c.example.demo.cart.api.CartController   : Successfully added 2 to Casey Lewis's cart
+2021-08-19 18:15:08.651 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:15:08.652 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.cart.model.persistence.Cart@1217de22]
+2021-08-19 18:15:08.655 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:15:28.202 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/cart/addToCart", parameters={}
+2021-08-19 18:15:28.204 DEBUG 38950 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.cart.model.persistence.Cart> com.example.demo.cart.api.CartController.addToCart(com.example.demo.cart.model.requests.ModifyCartRequest)
+2021-08-19 18:15:28.205 DEBUG 38950 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.cart.model.requests.ModifyCartRequest@411ec3e4]
+2021-08-19 18:15:28.243  INFO 38950 --- [http-nio-8081-exec-8] c.example.demo.cart.api.CartController   : Successfully added 2 to Casey Lewis's cart
+2021-08-19 18:15:28.244 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:15:28.245 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.cart.model.persistence.Cart@19f394d9]
+2021-08-19 18:15:28.247 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:16:25.714 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2021-08-19 18:16:25.717 DEBUG 38950 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-19 18:16:25.721 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:16:25.722 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 19 18:16:25 PDT 2021, status=403, error=Forbidden, message=Access Denied, path=/a (truncated)...]
+2021-08-19 18:16:25.731 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2021-08-19 18:16:39.238 DEBUG 38950 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/order/submit/Casey%20Lewis", parameters={}
+2021-08-19 18:16:39.240 DEBUG 38950 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.order.model.requests.UserOrder> com.example.demo.order.api.OrderController.submit(java.lang.String)
+2021-08-19 18:16:39.267  INFO 38950 --- [http-nio-8081-exec-10] c.e.demo.order.api.OrderController       : Order was submitted for Casey Lewis
+2021-08-19 18:16:39.270 DEBUG 38950 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:16:39.270 DEBUG 38950 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.order.model.requests.UserOrder@322806f9]
+2021-08-19 18:16:39.272 DEBUG 38950 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:17:16.378 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/user/id/1", parameters={}
+2021-08-19 18:17:16.379 DEBUG 38950 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.user.model.persistence.User> com.example.demo.user.api.UserController.findById(java.lang.Long)
+2021-08-19 18:17:16.387 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:17:16.388 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.user.model.persistence.User@1027bce7]
+2021-08-19 18:17:16.390 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:18:31.770 DEBUG 38950 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/order/history/Casey%20Lewis", parameters={}
+2021-08-19 18:18:31.773 DEBUG 38950 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.example.demo.order.model.requests.UserOrder>> com.example.demo.order.api.OrderController.getOrdersForUser(java.lang.String)
+2021-08-19 18:18:31.782  INFO 38950 --- [http-nio-8081-exec-4] c.e.demo.order.api.OrderController       : Returning a list of orders for user Casey Lewis
+2021-08-19 18:18:31.785 DEBUG 38950 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:18:31.785 DEBUG 38950 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.example.demo.order.model.requests.UserOrder@26df4e8f]]
+2021-08-19 18:18:31.792 DEBUG 38950 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:19:20.683 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/user/create", parameters={}
+2021-08-19 18:19:20.684 DEBUG 38950 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.user.model.persistence.User> com.example.demo.user.api.UserController.createUser(com.example.demo.user.model.requests.CreateUserRequest)
+2021-08-19 18:19:20.685 DEBUG 38950 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.user.model.requests.CreateUserRequest@560115bb]
+2021-08-19 18:19:20.807  INFO 38950 --- [http-nio-8081-exec-5] c.example.demo.user.api.UserController   : User Michael Lewis was created successfully
+2021-08-19 18:19:20.807 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:19:20.808 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.user.model.persistence.User@721d086d]
+2021-08-19 18:19:20.809 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:20:55.043 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/cart/addToCart", parameters={}
+2021-08-19 18:20:55.044 DEBUG 38950 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.cart.model.persistence.Cart> com.example.demo.cart.api.CartController.addToCart(com.example.demo.cart.model.requests.ModifyCartRequest)
+2021-08-19 18:20:55.045 DEBUG 38950 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.cart.model.requests.ModifyCartRequest@3c9a27a0]
+2021-08-19 18:20:55.053  INFO 38950 --- [http-nio-8081-exec-8] c.example.demo.cart.api.CartController   : Successfully added 2 to Michael Lewis's cart
+2021-08-19 18:20:55.054 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:20:55.055 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.cart.model.persistence.Cart@27df0922]
+2021-08-19 18:20:55.059 DEBUG 38950 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:21:10.458 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/order/submit/Casey%20Lewis", parameters={}
+2021-08-19 18:21:10.461 DEBUG 38950 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.order.model.requests.UserOrder> com.example.demo.order.api.OrderController.submit(java.lang.String)
+2021-08-19 18:21:10.493  INFO 38950 --- [http-nio-8081-exec-9] c.e.demo.order.api.OrderController       : Order was submitted for Casey Lewis
+2021-08-19 18:21:10.494 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:21:10.496 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.order.model.requests.UserOrder@8a3841]
+2021-08-19 18:21:10.501 DEBUG 38950 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 18:21:37.164 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?logout", parameters={masked}
+2021-08-19 18:21:37.164 DEBUG 38950 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-19 18:21:37.165 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:21:37.165 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 19 18:21:37 PDT 2021, status=403, error=Forbidden, message=Access Denied, path=/l (truncated)...]
+2021-08-19 18:21:37.166 DEBUG 38950 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2021-08-19 18:21:53.706 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login?logout", parameters={masked}
+2021-08-19 18:21:53.709 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-08-19 18:21:53.714 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-08-19 18:21:53.715 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-08-19 18:21:53.716 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?logout", parameters={masked}
+2021-08-19 18:21:53.716 DEBUG 38950 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-19 18:21:53.717 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:21:53.718 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 19 18:21:53 PDT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+2021-08-19 18:21:53.721 DEBUG 38950 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-08-19 18:22:08.480 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login?logout", parameters={masked}
+2021-08-19 18:22:08.481 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-08-19 18:22:08.487 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-08-19 18:22:08.488 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-08-19 18:22:08.489 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?logout", parameters={masked}
+2021-08-19 18:22:08.490 DEBUG 38950 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-19 18:22:08.492 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:22:08.492 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 19 18:22:08 PDT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+2021-08-19 18:22:08.493 DEBUG 38950 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-08-19 18:22:38.765 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login?logout", parameters={masked}
+2021-08-19 18:22:38.767 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2021-08-19 18:22:38.769 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-08-19 18:22:38.770 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-08-19 18:22:38.771 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?logout", parameters={masked}
+2021-08-19 18:22:38.773 DEBUG 38950 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-19 18:22:38.775 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 18:22:38.776 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 19 18:22:38 PDT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+2021-08-19 18:22:38.783 DEBUG 38950 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-08-19 18:22:59.419  INFO 38950 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 18:22:59.421  INFO 38950 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-19 18:22:59.424  INFO 38950 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-19 18:22:59.428  INFO 38950 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

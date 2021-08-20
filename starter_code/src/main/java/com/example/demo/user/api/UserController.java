@@ -64,8 +64,8 @@ public class UserController {
 		if (wasCartSaved) {
 			userService.setCart(user, cart);
 			userService.setPassword(user, createUserRequest.getPassword());
-			boolean wasUserSaved = userService.saveUser(user);
 
+			boolean wasUserSaved = userService.saveUser(user);
 			if (wasUserSaved) {
 				LOGGER.info().log("User {} was created successfully", createUserRequest.getUsername());
 				return ResponseEntity.ok(user);
