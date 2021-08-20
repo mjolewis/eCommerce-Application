@@ -1,0 +1,50 @@
+2021-08-19 17:37:24.657  INFO 38609 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.1.5.RELEASE)[0;39m
+
+
+2021-08-19 17:37:24.794  INFO 38609 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on Michaels-MacBook-Air.local with PID 38609 (started by mlewis in /Users/mlewis/IntelliJProjects/Udacity/Java Nanodegree/Security and DevOps/Final-Project/nd035-c4-Security-and-DevOps)
+2021-08-19 17:37:24.795  INFO 38609 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-08-19 17:37:26.093  INFO 38609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-08-19 17:37:26.203  INFO 38609 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 4 repository interfaces.
+2021-08-19 17:37:26.655  INFO 38609 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f76bcc45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-19 17:37:26.857  INFO 38609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-19 17:37:26.883  INFO 38609 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-19 17:37:26.884  INFO 38609 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-08-19 17:37:26.995  INFO 38609 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-19 17:37:26.996 DEBUG 38609 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2021-08-19 17:37:26.996  INFO 38609 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2026 ms
+2021-08-19 17:37:27.184  INFO 38609 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-19 17:37:27.323  INFO 38609 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-19 17:37:28.360  INFO 38609 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-19 17:37:29.039 DEBUG 38609 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2021-08-19 17:37:29.049  WARN 38609 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-19 17:37:29.110 DEBUG 38609 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2021-08-19 17:37:29.123 DEBUG 38609 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-19 17:37:29.150  INFO 38609 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@550c973e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e4eda17, org.springframework.security.web.header.HeaderWriterFilter@28daf506, org.springframework.web.filter.CorsFilter@161d95c6, org.springframework.security.web.authentication.logout.LogoutFilter@1144a02b, com.example.demo.security.JWTAuthenticationFilter@5203c80f, com.example.demo.security.JWTAuthenticationVerificationFilter@439f2d87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6befbb12, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ace6346, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@721bf7ad, org.springframework.security.web.session.SessionManagementFilter@693f2213, org.springframework.security.web.access.ExceptionTranslationFilter@6818fd48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ec9f8d]
+2021-08-19 17:37:29.319  INFO 38609 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 17:37:29.339 DEBUG 38609 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-19 17:37:29.385 DEBUG 38609 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-19 17:37:29.536  INFO 38609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-19 17:37:29.541  INFO 38609 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 5.388 seconds (JVM running for 6.56)
+2021-08-19 17:37:54.935  INFO 38609 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-19 17:37:54.936  INFO 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-19 17:37:54.937 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-08-19 17:37:54.951 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-08-19 17:37:54.951  INFO 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-08-19 17:37:55.000 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/user/create", parameters={}
+2021-08-19 17:37:55.007 DEBUG 38609 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<com.example.demo.user.model.persistence.User> com.example.demo.user.api.UserController.createUser(com.example.demo.user.model.requests.CreateUserRequest)
+2021-08-19 17:37:55.168 DEBUG 38609 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.user.model.requests.CreateUserRequest@1e671c8d]
+2021-08-19 17:37:55.468  INFO 38609 --- [http-nio-8081-exec-2] c.example.demo.user.api.UserController   : User Casey Lewis was created successfully
+2021-08-19 17:37:55.501 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-19 17:37:55.502 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.user.model.persistence.User@2a372998]
+2021-08-19 17:37:55.529 DEBUG 38609 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-19 17:38:34.078  INFO 38609 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 17:38:34.083  INFO 38609 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-19 17:38:34.086  INFO 38609 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-19 17:38:34.089  INFO 38609 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
