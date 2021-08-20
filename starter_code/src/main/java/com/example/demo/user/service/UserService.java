@@ -36,7 +36,7 @@ public class UserService {
 
     public boolean saveUser(User user) {
         User savedUser = userRepository.save(user);
-        return savedUser.getId() > 0;
+        return savedUser.getId() >= 0;
     }
 
     public Optional<User> findById(Long id) {

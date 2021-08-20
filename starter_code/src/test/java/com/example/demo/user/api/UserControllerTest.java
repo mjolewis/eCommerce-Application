@@ -1,12 +1,12 @@
-package com.example.demo.order.api;
+package com.example.demo.user.api;
+
+import static org.mockito.Mockito.*;
 
 import com.example.demo.cart.CartService;
 import com.example.demo.cart.model.persistence.Cart;
-import com.example.demo.user.api.UserController;
 import com.example.demo.user.model.persistence.User;
 import com.example.demo.user.model.requests.CreateUserRequest;
 import com.example.demo.user.service.UserService;
-import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,8 +16,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
-import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class UserControllerTest {
