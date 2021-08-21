@@ -12,13 +12,12 @@ pipeline {
     stages { // Continuous Integration phase
         stage('Unit Test') {
             steps {
-                    sh 'mvn test'
+                sh 'mvn test'
             }
         }
         stage('Build') { // The Continuous Delivery phase
             steps {
                     sh 'mvn -B -Dmaven.clean.skip=true -DskipTests package'
-                }
             }
             post { // If the maven build succeeded, archive the jar file
                 success {
