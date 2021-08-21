@@ -2,6 +2,7 @@ package com.example.demo.item.api;
 
 import java.util.List;
 
+import com.example.demo.item.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,22 +17,25 @@ import com.example.demo.item.model.persistence.ItemRepository;
 @RequestMapping("/api/item")
 public class ItemController {
 
-	@Autowired
-	private ItemRepository itemRepository;
+	private final ItemService itemService;
+
+	public ItemController(ItemService itemService) {
+		this.itemService = itemService;
+	}
 	
 	@GetMapping
 	public ResponseEntity<List<Item>> getItems() {
-		return ResponseEntity.ok(itemRepository.findAll());
+		return ResponseEntity.ok(itemService.findAll());
 	}
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Item> getItemById(@PathVariable Long id) {
-		return ResponseEntity.of(itemRepository.findById(id));
+		return ResponseEntity.of(itemService.findById(id));
 	}
 	
 	@GetMapping("/name/{name}")
 	public ResponseEntity<List<Item>> getItemsByName(@PathVariable String name) {
-		List<Item> items = itemRepository.findByName(name);
+		List<Item> items = itemService.findByName(name);
 		return items == null || items.isEmpty() ? ResponseEntity.notFound().build()
 				: ResponseEntity.ok(items);
 			
