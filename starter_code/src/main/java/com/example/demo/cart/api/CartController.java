@@ -45,7 +45,7 @@ public class CartController {
 		}
 
 		Optional<Item> item = itemService.findById(request.getItemId());
-		if(!item.isPresent()) {
+		if(item.isEmpty()) {
 			LOGGER.error().log("Error finding Item id {}. Cannot add to {}'s cart", request.getItemId(), request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
@@ -73,7 +73,7 @@ public class CartController {
 		}
 
 		Optional<Item> item = itemService.findById(request.getItemId());
-		if(!item.isPresent()) {
+		if(item.isEmpty()) {
 			LOGGER.error().log("Error finding Item id {}. Cannot remove from {}'s cart", request.getItemId(), request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
