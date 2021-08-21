@@ -2,7 +2,7 @@ package com.example.demo.item.api;
 
 import static org.mockito.Mockito.*;
 
-import com.example.demo.item.ItemService;
+import com.example.demo.item.service.ItemService;
 import com.example.demo.item.model.persistence.Item;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

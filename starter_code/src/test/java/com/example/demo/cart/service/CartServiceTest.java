@@ -3,7 +3,6 @@ package com.example.demo.cart.service;
 import static org.mockito.Mockito.when;
 
 import com.example.demo.cart.model.persistence.Cart;
-import com.example.demo.cart.CartService;
 import com.example.demo.cart.model.persistence.CartRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

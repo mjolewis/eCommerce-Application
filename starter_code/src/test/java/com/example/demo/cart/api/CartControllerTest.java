@@ -2,10 +2,10 @@ package com.example.demo.cart.api;
 
 import static org.mockito.Mockito.*;
 
-import com.example.demo.cart.CartService;
+import com.example.demo.cart.service.CartService;
 import com.example.demo.cart.model.persistence.Cart;
 import com.example.demo.cart.model.requests.ModifyCartRequest;
-import com.example.demo.item.ItemService;
+import com.example.demo.item.service.ItemService;
 import com.example.demo.item.model.persistence.Item;
 import com.example.demo.user.model.persistence.User;
 import com.example.demo.user.service.UserService;
@@ -38,6 +38,8 @@ public class CartControllerTest {
 
     private User user;
     private Cart cart;
+    private Item itemOne;
+    private Item itemTwo;
 
     @BeforeEach
     public void setup() {
@@ -46,20 +48,18 @@ public class CartControllerTest {
         user.setUsername("user");
         user.setPassword("password");
 
-        Item itemOne = new Item();
+        itemOne = new Item();
         itemOne.setId(1L);
         itemOne.setDescription("Analysis of Algorithms");
         itemOne.setPrice(new BigDecimal("150.00"));
 
-        Item itemTwo = new Item();
+        itemTwo = new Item();
         itemTwo.setId(2L);
         itemTwo.setDescription("Financial Technology");
         itemTwo.setPrice(new BigDecimal("90.83"));
 
         cart = new Cart();
         cart.setId(1L);
-        cart.addItem(itemOne);
-        cart.addItem(itemTwo);
 
         user.setCart(cart);
         cart.setUser(user);
@@ -95,6 +95,44 @@ public class CartControllerTest {
         Assertions.assertAll(
                 () -> Assertions.assertNotNull(response),
                 () -> Assertions.assertEquals(404, response.getStatusCodeValue())
+        );
+    }
+
+    @Test
+    public void addToCartWhenUserExistsAndItemExistsShouldReturn200StatusCode() {
+        ModifyCartRequest modifyCartRequest = new ModifyCartRequest();
+        modifyCartRequest.setUsername(user.getUsername());
+        modifyCartRequest.setItemId(1L);
+        modifyCartRequest.setQuantity(10);
+
+        when(userService.findByUsername(modifyCartRequest.getUsername())).thenReturn(user);
+        when(itemService.findById(modifyCartRequest.getItemId())).thenReturn(Optional.ofNullable(itemOne));
+        when(cartService.saveCart(user.getCart())).thenReturn(true);
+
+        ResponseEntity<Cart> response = cartController.addToCart(modifyCartRequest);
+
+        Assertions.assertAll(
+                () -> Assertions.assertNotNull(response),
+                () -> Assertions.assertEquals(200, response.getStatusCodeValue())
+        );
+    }
+
+    @Test
+    public void addToCartWhenUserExistsAndItemExistsButSavingCartFailedShouldReturn400StatusCode() {
+        ModifyCartRequest modifyCartRequest = new ModifyCartRequest();
+        modifyCartRequest.setUsername(user.getUsername());
+        modifyCartRequest.setItemId(1L);
+        modifyCartRequest.setQuantity(10);
+
+        when(userService.findByUsername(modifyCartRequest.getUsername())).thenReturn(user);
+        when(itemService.findById(modifyCartRequest.getItemId())).thenReturn(Optional.ofNullable(itemOne));
+        when(cartService.saveCart(user.getCart())).thenReturn(false);
+
+        ResponseEntity<Cart> response = cartController.addToCart(modifyCartRequest);
+
+        Assertions.assertAll(
+                () -> Assertions.assertNotNull(response),
+                () -> Assertions.assertEquals(400, response.getStatusCodeValue())
         );
     }
 }

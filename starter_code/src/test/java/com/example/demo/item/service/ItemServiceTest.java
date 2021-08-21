@@ -1,6 +1,5 @@
 package com.example.demo.item.service;
 
-import com.example.demo.item.ItemService;
 import com.example.demo.item.model.persistence.Item;
 import com.example.demo.item.model.persistence.ItemRepository;
 import org.junit.jupiter.api.Assertions;
@@ -11,7 +10,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.ResponseEntity;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
