@@ -3,10 +3,10 @@ package com.example.demo.cart.api;
 import java.util.Optional;
 import java.util.stream.IntStream;
 
-import com.example.demo.cart.CartService;
+import com.example.demo.cart.service.CartService;
 import com.example.demo.cart.model.persistence.Cart;
 import com.example.demo.cart.model.requests.ModifyCartRequest;
-import com.example.demo.item.ItemService;
+import com.example.demo.item.service.ItemService;
 import com.example.demo.user.service.UserService;
 import org.fissore.slf4j.FluentLogger;
 import org.fissore.slf4j.FluentLoggerFactory;

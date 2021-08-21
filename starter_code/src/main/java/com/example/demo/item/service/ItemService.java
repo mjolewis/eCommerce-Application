@@ -1,4 +1,4 @@
-package com.example.demo.item;
+package com.example.demo.item.service;
 
 import com.example.demo.item.model.persistence.Item;
 import com.example.demo.item.model.persistence.ItemRepository;

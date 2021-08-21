@@ -1,4 +1,4 @@
-package com.example.demo.cart;
+package com.example.demo.cart.service;
 
 import com.example.demo.cart.model.persistence.Cart;
 import com.example.demo.cart.model.persistence.CartRepository;

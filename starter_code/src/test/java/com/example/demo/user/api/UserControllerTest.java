@@ -2,7 +2,7 @@ package com.example.demo.user.api;
 
 import static org.mockito.Mockito.*;
 
-import com.example.demo.cart.CartService;
+import com.example.demo.cart.service.CartService;
 import com.example.demo.cart.model.persistence.Cart;
 import com.example.demo.user.model.persistence.User;
 import com.example.demo.user.model.requests.CreateUserRequest;

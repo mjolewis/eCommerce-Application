@@ -1,6 +1,6 @@
 package com.example.demo.user.api;
 
-import com.example.demo.cart.CartService;
+import com.example.demo.cart.service.CartService;
 import com.example.demo.user.model.requests.CreateUserRequest;
 import com.example.demo.user.service.UserService;
 import com.example.demo.user.model.persistence.User;
