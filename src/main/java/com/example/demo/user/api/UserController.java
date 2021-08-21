@@ -74,5 +74,4 @@ public class UserController {
 		LOGGER.error().log("User {} could not be saved", createUserRequest.getUsername());
 		return ResponseEntity.badRequest().build();
 	}
-	
 }
