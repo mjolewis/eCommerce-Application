@@ -3149,3 +3149,54 @@ java.lang.StackOverflowError: null
 2021-08-21 10:04:37.344 DEBUG 45160 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.order.model.requests.UserOrder@5d078dc0]
 2021-08-21 10:04:37.346 DEBUG 45160 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2021-08-21 10:04:54.414  INFO 45160 --- [SpringContextShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-08-21 14:02:28.284  INFO 48056 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m              [2m (v2.5.0)[0;39m
+
+
+2021-08-21 14:02:28.441  INFO 48056 --- [main] com.example.demo.EcommerceApplication    : Starting EcommerceApplication using Java 13.0.1 on Michaels-MacBook-Air.local with PID 48056 (/Users/mlewis/IntelliJProjects/Udacity/Java Nanodegree/Security and DevOps/Final-Project/nd035-c4-Security-and-DevOps/target/classes started by mlewis in /Users/mlewis/IntelliJProjects/Udacity/Java Nanodegree/Security and DevOps/Final-Project/nd035-c4-Security-and-DevOps)
+2021-08-21 14:02:28.442  INFO 48056 --- [main] com.example.demo.EcommerceApplication    : No active profile set, falling back to default profiles: default
+2021-08-21 14:02:28.575  WARN 48056 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-08-21 14:02:29.771  INFO 48056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-21 14:02:30.023  INFO 48056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 237 ms. Found 4 JPA repository interfaces.
+2021-08-21 14:02:30.892  INFO 48056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-21 14:02:30.906  INFO 48056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-21 14:02:30.906  INFO 48056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-08-21 14:02:31.042  INFO 48056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-21 14:02:31.043  INFO 48056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2500 ms
+2021-08-21 14:02:31.625  INFO 48056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-21 14:02:31.795  INFO 48056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-21 14:02:32.799  INFO 48056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-21 14:02:33.897  WARN 48056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-21 14:02:34.620 DEBUG 48056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2021-08-21 14:02:34.746 DEBUG 48056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-08-21 14:02:34.761  INFO 48056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@594c66c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@69419d59, org.springframework.security.web.header.HeaderWriterFilter@652a1a17, org.springframework.web.filter.CorsFilter@64e657b0, org.springframework.security.web.authentication.logout.LogoutFilter@52a74328, com.example.demo.security.JWTAuthenticationFilter@50013a15, com.example.demo.security.JWTAuthenticationVerificationFilter@6c46dc02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@96075c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7474196, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5606d537, org.springframework.security.web.session.SessionManagementFilter@186d6033, org.springframework.security.web.access.ExceptionTranslationFilter@7f5e9949, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fb70301]
+2021-08-21 14:02:34.822 DEBUG 48056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-08-21 14:02:34.868 DEBUG 48056 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-08-21 14:02:35.087  INFO 48056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-21 14:02:35.104  INFO 48056 --- [main] com.example.demo.EcommerceApplication    : Started EcommerceApplication in 7.468 seconds (JVM running for 9.209)
+2021-08-21 14:02:35.106  INFO 48056 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-08-21 14:02:35.108  INFO 48056 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-08-21 14:02:42.629  INFO 48056 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-21 14:02:42.630  INFO 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-21 14:02:42.630 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-08-21 14:02:42.630 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-08-21 14:02:42.631 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-08-21 14:02:42.632 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@280099a0
+2021-08-21 14:02:42.633 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@56554365
+2021-08-21 14:02:42.634 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-08-21 14:02:42.634  INFO 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-08-21 14:02:42.664 DEBUG 48056 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.user.api.UserController#createUser(CreateUserRequest)
+2021-08-21 14:02:42.679 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/user/create", parameters={}
+2021-08-21 14:02:42.681 DEBUG 48056 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.demo.user.api.UserController#createUser(CreateUserRequest)
+2021-08-21 14:02:42.827 DEBUG 48056 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.demo.user.model.requests.CreateUserRequest@ccf16dc]
+2021-08-21 14:02:43.101  INFO 48056 --- [http-nio-8081-exec-1] c.example.demo.user.api.UserController   : User Casey Lewis was created successfully
+2021-08-21 14:02:43.135 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-08-21 14:02:43.136 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.demo.user.model.persistence.User@73b7181]
+2021-08-21 14:02:43.179 DEBUG 48056 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-08-21 14:02:47.735 DEBUG 48056 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
