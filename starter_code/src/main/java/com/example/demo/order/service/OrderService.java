@@ -17,7 +17,7 @@ public class OrderService {
     }
 
     public boolean saveOrder(UserOrder userOrder) {
-        return orderRepository.save(userOrder).getId()>=0;
+        return orderRepository.save(userOrder).getId() >= 0;
     }
 
     public List<UserOrder> findByUser(User user) {
